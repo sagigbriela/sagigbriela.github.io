@@ -1,2 +1,2 @@
 # sagigbriela.github.io
-my bloh
+my blog
