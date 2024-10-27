@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background: black;
+    font-family: "Anonymous Pro", monospace;
+}
+
+.hacker-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* plays in the background */
+}
+
+canvas {
+    display: block;
+}
+
+nav {
+    position: relative; 
+    z-index: 1;  /*Goes in top of the letter background */
+}
+
+.nav_bar_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    opacity: 0.81;
+    height: 3rem;
+
+}
+
+.topnav-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    float: left;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 100px;
+    margin: 0px 4rem;
+    text-decoration: none;
+    color: #BFFB4F;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.disk_svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    padding-top: 40px;
+}
+
