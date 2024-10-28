@@ -99,8 +99,8 @@ li a {
         background-color: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 4rem;
-        left: 70%;
-        transform: translateX(-50%);
+        left: 50%;
+        transform: translateX(-30%);
         text-align: center;
         padding-bottom: 1rem;
         border-radius: 5px;
