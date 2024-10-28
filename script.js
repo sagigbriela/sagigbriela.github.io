@@ -53,3 +53,9 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.nav_bar_ul');
+    menu.classList.toggle('show-menu');
+}
