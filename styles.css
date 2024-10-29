@@ -137,13 +137,13 @@ li a {
         position: absolute;
         top: 4rem;
         right: 3em;
-        transform: translateX(-30%);
         text-align: center;
-        padding-bottom: 1rem;
         border-radius: 5px;
         overflow: scroll;
         height: 8rem;
         z-index: 10;
+        padding: 0;
+        top: 2rem;
     }
 
     .nav_bar_ul::-webkit-scrollbar {
