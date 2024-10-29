@@ -77,6 +77,43 @@ li a {
 }
 
 
+
+
+
+/*About me box*/
+.about-me-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.title-aboutme {
+    position: absolute;
+    color: #BFFB4F; 
+    font-family: "Pixelify Sans", serif; 
+    font-size: 13rem; 
+    font-weight: 700;
+    line-height: 1; 
+    margin: 0; 
+    padding: 0; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    height: 150px;
+}
+
 /* Responsive Menu */
 @media (max-width: 768px) {
     .barra-responsive {
@@ -95,15 +132,22 @@ li a {
     .nav_bar_ul {
         display: none;
         flex-direction: column;
-        width: 90%;
+        width: 8rem;
         background-color: rgba(0, 0, 0, 0.9);
         position: absolute;
         top: 4rem;
-        left: 50%;
+        right: 3em;
         transform: translateX(-30%);
         text-align: center;
         padding-bottom: 1rem;
         border-radius: 5px;
+        overflow: scroll;
+        height: 8rem;
+        z-index: 10;
+    }
+
+    .nav_bar_ul::-webkit-scrollbar {
+        display: none;
     }
 
     .disk_svg_responsive {
@@ -132,41 +176,4 @@ li a {
         text-align: center;
         background-color: black;
     }
-}
-
-
-
-/*About me box*/
-.about-me-box {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    z-index: 1;
-}
-
-.title-aboutme {
-    position: absolute;
-    color: #BFFB4F; 
-    font-family: "Pixelify Sans", serif; 
-    font-size: 13rem; 
-    font-weight: 700;
-    line-height: 1; 
-    margin: 0; 
-    padding: 0; 
-    top: 0; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    z-index: 2; 
-    height: 150px;
 }
